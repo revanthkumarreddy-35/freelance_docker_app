@@ -5,7 +5,7 @@ services:
     container_name: freelance-db
     restart: always
     environment:
-      MYSQL_DATABASE: frelance
+      MYSQL_DATABASE: freelance
       MYSQL_ROOT_PASSWORD: root
     ports:
       - "3306:3306"
