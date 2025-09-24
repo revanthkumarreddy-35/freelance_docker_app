@@ -10,6 +10,7 @@
     
     # Install deps and build
     RUN npm install
+    RUN chmod -R 755 node_modules/.bin
     RUN npm run build
     
     # ---------- Run stage ----------
