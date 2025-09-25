@@ -19,7 +19,7 @@
     COPY --from=builder /app/target/*.jar app.jar
     
     # Expose backend port
-    EXPOSE 8081
+    EXPOSE 8080
     
     # Optional JVM opts
     ENV JAVA_OPTS=""
