@@ -12,7 +12,7 @@
     RUN --mount=type=cache,target=/root/.m2 mvn clean install package -DskipTests
     
     # ---------- Run stage ----------
-    FROM eclipse-temurin:24-jre
+    FROM eclipse-temurin:21-jre
     WORKDIR /app
     
     # Copy jar from builder stage
